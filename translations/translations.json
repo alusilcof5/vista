@@ -1,0 +1,365 @@
+
+  [
+    {
+      "es": {
+        "title": "Componentes de VISTA QA",
+        "nav": {
+          "home": "Inicio"
+        },
+        "buttons": {
+          "english": "English",
+          "darkMode": "Modo Oscuro",
+          "lightMode": "Modo Claro"
+        },
+        "sections": {
+          "whyVista": {
+            "title": "¿Por qué VISTA QA es atractivo y efectivo?",
+            "description": "\"VISTA\" evoca claridad, visión e inclusividad. El acrónimo comunica perfectamente el propósito de la metodología.",
+            "optimization": "Optimiza las tareas de accesibilidad con pasos claros y accionables, desde los requisitos hasta las pruebas y la creación de cultura. Se integra perfectamente con metodologías existentes."
+          },
+          "impact": {
+            "title": "Impacto Significativo",
+            "description": "Prioriza la accesibilidad como una métrica de calidad central, asegurando software inclusivo y cumplimiento con los estándares. Crea un impacto real en la experiencia del usuario."
+          },
+          "community": {
+            "title": "Enfoque en la Comunidad",
+            "description": "Diseñado para equipos de QA, se integra con Agile/DevOps, utiliza herramientas prácticas y enfatiza resultados medibles. Proporciona un marco claro pero adaptable."
+          }
+        },
+        "components": {
+          "v": "V: Visión",
+          "i": "I: Inclusión",
+          "s": "S: Sistematización",
+          "t": "T: Testing",
+          "a": "A: Adopción"
+        },
+        "vision": {
+          "title": "V – Requisitos Visionarios",
+          "purpose": {
+            "title": "Propósito",
+            "description": "Incorporar la accesibilidad en los requisitos del proyecto para crear una visión clara e inclusiva desde el principio."
+          },
+          "process": {
+            "title": "Proceso",
+            "item1": "Colaborar con las partes interesadas para crear historias de usuario que prioricen la accesibilidad.",
+            "item2": "Definir criterios de aceptación alineados con WCAG 2.1/2.2.",
+            "item3": "Utilizar una matriz de trazabilidad para garantizar que todos los requisitos de accesibilidad sean comprobables."
+          },
+          "metrics": {
+            "title": "Métricas",
+            "coverage": "Cobertura de requisitos de accesibilidad: 100%",
+            "approval": "Tasa de aprobación de partes interesadas: >95%"
+          },
+          "tools": {
+            "title": "Herramientas",
+            "wcag": "Lista de verificación WCAG 2.1/2.2",
+            "personas": "Personas de accesibilidad"
+          },
+          "effectiveness": {
+            "title": "¿Por qué es efectivo?",
+            "description": "Establece una base proactiva e inclusiva que minimiza el retrabajo, promueve el cumplimiento normativo y alinea a todo el equipo con una visión de producto accesible desde el inicio."
+          }
+        },
+        "testing": {
+          "title": "T – Testing: Evaluación de Accesibilidad",
+          "designReview": {
+            "title": "Revisión de Diseño",
+            "description": "Validar que los diseños de UI/UX cumplan con las Pautas de Accesibilidad para el Contenido Web (WCAG), específicamente:",
+            "contrast": "Contraste de color mínimo de 4.5:1.",
+            "focus": "Gestión correcta del enfoque (focus states visibles y lógicos).",
+            "semantic": "Uso adecuado de HTML semántico y roles ARIA (Application Roles & Attributes)."
+          },
+          "assistive": {
+            "title": "Pruebas Asistivas",
+            "description": "Se realizan pruebas con tecnologías asistivas para simular la experiencia de usuarios con diferentes tipos de discapacidad:",
+            "readers": "Lectores de pantalla (NVDA, JAWS, VoiceOver, TalkBack).",
+            "navigation": "Navegación por teclado y comandos de voz.",
+            "validation": "Validación del flujo completo sin dependencias visuales."
+          },
+          "tools": {
+            "title": "Herramientas Recomendadas"
+          },
+          "metrics": {
+            "title": "Métricas Clave",
+            "violations": "Violaciones de accesibilidad por página: <3",
+            "aria": "Cumplimiento de ARIA: 100%",
+            "assistiveRate": "Tasa de aprobación de tecnología asistiva: >90%"
+          },
+          "justification": {
+            "title": "Justificación",
+            "p1": "La fase de \"Testing\" en VISTA QA garantiza que la accesibilidad sea validada desde múltiples ángulos: técnico, funcional y experiencial. Las pruebas de diseño aseguran que los principios fundamentales de accesibilidad se respeten desde la capa visual y estructural del producto.",
+            "p2": "Al integrar pruebas asistivas reales, se garantiza que la solución sea usable por personas con discapacidades permanentes, temporales o situacionales, reforzando el compromiso con el diseño universal. Este enfoque reduce los errores post-lanzamiento, mejora la experiencia de usuario y asegura el cumplimiento normativo, tanto técnico (WCAG/ARIA) como legal (ADA, EAA)."
+          }
+        },
+        "systematization": {
+          "title": "S – Pruebas de Accesibilidad Optimizadas",
+          "purpose": {
+            "title": "Propósito",
+            "description": "Integrar pruebas de accesibilidad automatizadas y manuales directamente en los pipelines de integración y entrega continua (CI/CD), permitiendo una validación constante y sistematizada de la accesibilidad a lo largo del ciclo de desarrollo."
+          },
+          "process": {
+            "title": "Proceso",
+            "item1": "Ejecutar escaneos automáticos de accesibilidad durante las fases de desarrollo y revisión de código.",
+            "item2": "Realizar pruebas manuales específicas para escenarios complejos como modales, navegación por teclado y componentes dinámicos.",
+            "item3": "Priorizar, registrar y dar seguimiento inmediato a defectos de accesibilidad, asegurando su resolución antes del lanzamiento."
+          },
+          "metrics": {
+            "title": "Métricas Clave",
+            "coverage": "Cobertura de pruebas automatizadas de accesibilidad: >85%",
+            "resolution": "Resolución de problemas críticos antes del lanzamiento: 100%"
+          },
+          "tools": {
+            "title": "Herramientas Recomendadas",
+            "pa11y": "Para escaneos automáticos en entornos CI.",
+            "playwright": "Para pruebas end-to-end con validaciones de accesibilidad integradas.",
+            "selenium": "Para automatización avanzada de pruebas en la UI.",
+            "gitlab": "Para ejecutar pipelines con validaciones automatizadas en cada commit/merge."
+          },
+          "justification": {
+            "title": "Justificación",
+            "p1": "La sistematización de pruebas accesibles dentro del flujo CI/CD representa una madurez técnica en la cultura de calidad. Al detectar errores en etapas tempranas, se reduce significativamente el costo de corrección y se acelera el tiempo de entrega. Además, esta integración convierte la accesibilidad en una responsabilidad compartida del equipo, y no en una tarea aislada al final del proceso.",
+            "p2": "Las pruebas automatizadas garantizan cobertura constante, mientras que las manuales aseguran precisión en contextos complejos que requieren juicio humano. Esta combinación optimizada de técnicas y herramientas fortalece la calidad inclusiva del software, mejora la experiencia del usuario final y refuerza la conformidad con estándares internacionales."
+          }
+        },
+        "inclusion": {
+          "title": "I – Perspectivas Transformadoras de Usuarios",
+          "usability": {
+            "title": "Pruebas de Usabilidad",
+            "description": "Realizar pruebas con usuarios que representen la diversidad de capacidades humanas —personas ciegas, con baja visión, discapacidades motoras o cognitivas— permite validar la experiencia real de uso. Estas pruebas ofrecen datos empíricos sobre accesibilidad percibida, flujo de navegación y barreras ocultas que las herramientas automáticas no detectan.",
+            "tools": {
+              "title": "Herramientas Recomendadas",
+              "zoom": "Para sesiones de prueba remotas y observación directa.",
+              "forms": "Para encuestas estructuradas post-sesión.",
+              "zephyr": "Para rastrear hallazgos, documentar feedback y priorizar acciones."
+            },
+            "metrics": {
+              "title": "Métricas Clave",
+              "satisfaction": "Puntuación de satisfacción del usuario (CSAT): > 8.5/10",
+              "incorporation": "Tasa de incorporación de retroalimentación: > 90%"
+            }
+          },
+          "demos": {
+            "title": "Demostraciones y Retroalimentación",
+            "description": "Las demostraciones periódicas de funcionalidades accesibles permiten recopilar impresiones tanto de usuarios finales como de stakeholders clave (clientes, líderes de producto, QA). Facilitar estas sesiones con estructuras claras promueve la alineación con expectativas inclusivas y detecta fallas de implementación."
+          },
+          "iteration": {
+            "title": "Iteración y Mejora",
+            "description": "A partir de los hallazgos obtenidos en pruebas reales, se promueve la mejora continua. El equipo refina funcionalidades, corrige obstáculos y perfecciona la experiencia general. La accesibilidad deja de ser una verificación puntual y se convierte en un ciclo iterativo basado en evidencia."
+          },
+          "justification": {
+            "title": "Justificación Académica",
+            "description": "Incorporar la voz directa del usuario con discapacidad no solo enriquece el diseño inclusivo, sino que refuerza una práctica centrada en la ética digital. Esta dimensión transformadora de la accesibilidad eleva la calidad percibida y real del producto, al mismo tiempo que promueve la empatía, la innovación social y el cumplimiento de principios del diseño universal."
+          }
+        },
+        "adoption": {
+          "title": "A – Cultura de Calidad Adaptativa",
+          "training": {
+            "title": "Capacitación Continua",
+            "description": "Fomentar una cultura de accesibilidad sostenible requiere capacitación continua. Educar a los equipos en los principios de las WCAG, en el uso de tecnologías asistivas (como lectores de pantalla o navegación por teclado), y en buenas prácticas de desarrollo inclusivo es esencial para mantener la calidad a largo plazo.",
+            "tools": {
+              "title": "Herramientas Recomendadas",
+              "confluence": "Para documentación de estándares y guías prácticas.",
+              "teams": "Para sesiones sincrónicas de formación y talleres colaborativos.",
+              "platforms": "Como Deque University, edX, o Coursera para capacitación técnica."
+            }
+          },
+          "improvement": {
+            "title": "Mejora de Procesos",
+            "description": "Las retrospectivas periódicas permiten refinar el enfoque de accesibilidad de manera continua. Evaluar qué prácticas han sido efectivas, dónde se presentan cuellos de botella y cómo pueden mejorarse los flujos permite institucionalizar la accesibilidad en la cultura operativa."
+          },
+          "celebration": {
+            "title": "Celebración de Logros",
+            "description": "Reconocer públicamente los logros del equipo en accesibilidad —como alcanzar conformidad WCAG AA o completar sprints sin defectos de accesibilidad— refuerza el compromiso colectivo. Celebrar estos hitos crea motivación, visibiliza el impacto del trabajo y transforma la accesibilidad en un motivo de orgullo organizacional."
+          },
+          "justification": {
+            "title": "Justificación Académica",
+            "p1": "La adopción efectiva de prácticas de accesibilidad no se logra únicamente con políticas técnicas, sino con el desarrollo de una cultura organizacional que valore la inclusión digital como un pilar de calidad. Estudios de cambio organizacional demuestran que la capacitación sostenida, la mejora incremental y la celebración de logros son fundamentales para garantizar la permanencia de nuevas prácticas.",
+            "p2": "Esta dimensión \"adaptativa\" no solo responde a normas externas, sino que transforma los valores internos del equipo hacia una calidad genuinamente centrada en el ser humano."
+          }
+        },
+        "footer": {
+          "copyright": "© 2025 VISTA QA. Todos los derechos reservados."
+        }
+      },
+      "en": {
+        "title": "VISTA QA Components",
+        "nav": {
+          "home": "Home"
+        },
+        "buttons": {
+          "english": "Español",
+          "darkMode": "Dark Mode",
+          "lightMode": "Light Mode"
+        },
+        "sections": {
+          "whyVista": {
+            "title": "Why is VISTA QA attractive and effective?",
+            "description": "\"VISTA\" evokes clarity, vision and inclusivity. The acronym perfectly communicates the purpose of the methodology.",
+            "optimization": "Optimizes accessibility tasks with clear and actionable steps, from requirements to testing and culture creation. Integrates seamlessly with existing methodologies."
+          },
+          "impact": {
+            "title": "Significant Impact",
+            "description": "Prioritizes accessibility as a central quality metric, ensuring inclusive software and compliance with standards. Creates real impact on user experience."
+          },
+          "community": {
+            "title": "Community Focus",
+            "description": "Designed for QA teams, integrates with Agile/DevOps, uses practical tools and emphasizes measurable results. Provides a clear but adaptable framework."
+          }
+        },
+        "components": {
+          "v": "V: Vision",
+          "i": "I: Inclusion",
+          "s": "S: Systematization",
+          "t": "T: Testing",
+          "a": "A: Adoption"
+        },
+        "vision": {
+          "title": "V – Visionary Requirements",
+          "purpose": {
+            "title": "Purpose",
+            "description": "Incorporate accessibility into project requirements to create a clear and inclusive vision from the beginning."
+          },
+          "process": {
+            "title": "Process",
+            "item1": "Collaborate with stakeholders to create user stories that prioritize accessibility.",
+            "item2": "Define acceptance criteria aligned with WCAG 2.1/2.2.",
+            "item3": "Use a traceability matrix to ensure all accessibility requirements are testable."
+          },
+          "metrics": {
+            "title": "Metrics",
+            "coverage": "Accessibility requirements coverage: 100%",
+            "approval": "Stakeholder approval rate: >95%"
+          },
+          "tools": {
+            "title": "Tools",
+            "wcag": "WCAG 2.1/2.2 checklist",
+            "personas": "Accessibility personas"
+          },
+          "effectiveness": {
+            "title": "Why is it effective?",
+            "description": "Establishes a proactive and inclusive foundation that minimizes rework, promotes regulatory compliance and aligns the entire team with an accessible product vision from the start."
+          }
+        },
+        "testing": {
+          "title": "T – Testing: Accessibility Assessment",
+          "designReview": {
+            "title": "Design Review",
+            "description": "Validate that UI/UX designs comply with Web Content Accessibility Guidelines (WCAG), specifically:",
+            "contrast": "Minimum color contrast of 4.5:1.",
+            "focus": "Correct focus management (visible and logical focus states).",
+            "semantic": "Proper use of semantic HTML and ARIA roles (Application Roles & Attributes)."
+          },
+          "assistive": {
+            "title": "Assistive Testing",
+            "description": "Tests are performed with assistive technologies to simulate the experience of users with different types of disabilities:",
+            "readers": "Screen readers (NVDA, JAWS, VoiceOver, TalkBack).",
+            "navigation": "Keyboard navigation and voice commands.",
+            "validation": "Full flow validation without visual dependencies."
+          },
+          "tools": {
+            "title": "Recommended Tools"
+          },
+          "metrics": {
+            "title": "Key Metrics",
+            "violations": "Accessibility violations per page: <3",
+            "aria": "ARIA compliance: 100%",
+            "assistiveRate": "Assistive technology approval rate: >90%"
+          },
+          "justification": {
+            "title": "Justification",
+            "p1": "The \"Testing\" phase in VISTA QA ensures that accessibility is validated from multiple angles: technical, functional and experiential. Design testing ensures that fundamental accessibility principles are respected from the visual and structural layer of the product.",
+            "p2": "By integrating real assistive testing, it ensures that the solution is usable by people with permanent, temporary or situational disabilities, reinforcing the commitment to universal design. This approach reduces post-launch errors, improves user experience and ensures regulatory compliance, both technical (WCAG/ARIA) and legal (ADA, EAA)."
+          }
+        },
+        "systematization": {
+          "title": "S – Optimized Accessibility Testing",
+          "purpose": {
+            "title": "Purpose",
+            "description": "Integrate automated and manual accessibility testing directly into continuous integration and delivery (CI/CD) pipelines, enabling constant and systematized accessibility validation throughout the development cycle."
+          },
+          "process": {
+            "title": "Process",
+            "item1": "Execute automated accessibility scans during development and code review phases.",
+            "item2": "Perform specific manual tests for complex scenarios like modals, keyboard navigation and dynamic components.",
+            "item3": "Prioritize, log and immediately track accessibility defects, ensuring resolution before launch."
+          },
+          "metrics": {
+            "title": "Key Metrics",
+            "coverage": "Automated accessibility test coverage: >85%",
+            "resolution": "Critical issue resolution before launch: 100%"
+          },
+          "tools": {
+            "title": "Recommended Tools",
+            "pa11y": "For automated scans in CI environments.",
+            "playwright": "For end-to-end testing with integrated accessibility validations.",
+            "selenium": "For advanced UI test automation.",
+            "gitlab": "For running pipelines with automated validations on every commit/merge."
+          },
+          "justification": {
+            "title": "Justification",
+            "p1": "The systematization of accessible testing within the CI/CD flow represents technical maturity in quality culture. By detecting errors in early stages, correction costs are significantly reduced and delivery time is accelerated. Additionally, this integration makes accessibility a shared team responsibility, not an isolated task at the end of the process.",
+            "p2": "Automated tests ensure constant coverage, while manual tests ensure precision in complex contexts that require human judgment. This optimized combination of techniques and tools strengthens the inclusive quality of software, improves the end-user experience and reinforces compliance with international standards."
+          }
+        },
+        "inclusion": {
+          "title": "I – Transformative User Perspectives",
+          "usability": {
+            "title": "Usability Testing",
+            "description": "Conducting tests with users representing the diversity of human capabilities —blind people, with low vision, motor or cognitive disabilities— allows validating the real use experience. These tests offer empirical data on perceived accessibility, navigation flow and hidden barriers that automated tools do not detect.",
+            "tools": {
+              "title": "Recommended Tools",
+              "zoom": "For remote test sessions and direct observation.",
+              "forms": "For structured post-session surveys.",
+              "zephyr": "For tracking findings, documenting feedback and prioritizing actions."
+            },
+            "metrics": {
+              "title": "Key Metrics",
+              "satisfaction": "User satisfaction score (CSAT): > 8.5/10",
+              "incorporation": "Feedback incorporation rate: > 90%"
+            }
+          },
+          "demos": {
+            "title": "Demonstrations and Feedback",
+            "description": "Regular demonstrations of accessible functionalities allow collecting impressions from both end users and key stakeholders (customers, product leaders, QA). Facilitating these sessions with clear structures promotes alignment with inclusive expectations and detects implementation failures."
+          },
+          "iteration": {
+            "title": "Iteration and Improvement",
+            "description": "Based on findings from real tests, continuous improvement is promoted. The team refines functionalities, corrects obstacles and perfects the overall experience. Accessibility stops being a one-time verification and becomes an iterative cycle based on evidence."
+          },
+          "justification": {
+            "title": "Academic Justification",
+            "description": "Incorporating the direct voice of users with disabilities not only enriches inclusive design, but also reinforces a practice centered on digital ethics. This transformative dimension of accessibility elevates the perceived and real quality of the product, while promoting empathy, social innovation and compliance with universal design principles."
+          }
+        },
+        "adoption": {
+          "title": "A – Adaptive Quality Culture",
+          "training": {
+            "title": "Continuous Training",
+            "description": "Fostering a sustainable accessibility culture requires continuous training. Educating teams on WCAG principles, use of assistive technologies (such as screen readers or keyboard navigation), and inclusive development best practices is essential to maintain long-term quality.",
+            "tools": {
+              "title": "Recommended Tools",
+              "confluence": "For documentation of standards and practical guides.",
+              "teams": "For synchronous training sessions and collaborative workshops.",
+              "platforms": "Such as Deque University, edX, or Coursera for technical training."
+            }
+          },
+          "improvement": {
+            "title": "Process Improvement",
+            "description": "Periodic retrospectives allow continuous refinement of the accessibility approach. Evaluating which practices have been effective, where bottlenecks occur and how flows can be improved allows institutionalizing accessibility in the operational culture."
+          },
+          "celebration": {
+            "title": "Achievement Celebration",
+            "description": "Publicly recognizing team achievements in accessibility —such as achieving WCAG AA compliance or completing sprints without accessibility defects— reinforces collective commitment. Celebrating these milestones creates motivation, makes the impact of work visible and transforms accessibility into a source of organizational pride."
+          },
+          "justification": {
+            "title": "Academic Justification",
+            "p1": "Effective adoption of accessibility practices is not achieved solely through technical policies, but through the development of an organizational culture that values digital inclusion as a quality pillar. Organizational change studies demonstrate that sustained training, incremental improvement and celebration of achievements are fundamental to ensuring the permanence of new practices.",
+            "p2": "This \"adaptive\" dimension not only responds to external norms, but transforms the internal values of the team towards genuinely human-centered quality."
+          }
+        },
+        "footer": {
+          "copyright": "© 2025 VISTA QA. All rights reserved."
+        }
+      }
+    }
+  ]

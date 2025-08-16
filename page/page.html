@@ -4,106 +4,102 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Componentes de VISTA QA</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
   <header>
-    <div class="logo">
+  <div class="logo">
+    <a href="../index.html">
       <img src="../img/logo.png" alt="VISTA QA Logo">
+    </a>
+  </div>
+  <div class="header-controls">
+    <button class="toggle-lang" data-translate="buttons.english">English</button>
+    <button class="toggle-mode" data-translate="buttons.darkMode">Modo Oscuro</button>
+  </div>
+</header>
+
+
+  <main>
+    <h1 class="card" data-translate="title">Componentes de VISTA QA</h1>
+
+    <div class="card">
+      <h2 data-translate="sections.whyVista.title">¿Por qué VISTA QA es atractivo y efectivo?</h2>
+      <p data-translate="sections.whyVista.description">"VISTA" evoca claridad, visión e inclusividad. El acrónimo comunica perfectamente el propósito de la metodología.</p>
+      <p data-translate="sections.whyVista.optimization">Optimiza las tareas de accesibilidad con pasos claros y accionables, desde los requisitos hasta las pruebas y la creación de cultura. Se integra perfectamente con metodologías existentes.</p>
     </div>
-    <nav>
-      <a href="../index.html">Inicio</a>
-    </nav>
 
-    <div>
-      <button class="toggle-lang">English</button>
-      <button class="toggle-mode">Modo Oscuro</button>
+    <div class="card">
+      <h2 data-translate="sections.impact.title">Impacto Significativo</h2>
+      <p data-translate="sections.impact.description">Prioriza la accesibilidad como una métrica de calidad central, asegurando software inclusivo y cumplimiento con los estándares. Crea un impacto real en la experiencia del usuario.</p>
     </div>
-  </header>
 
-  <h1 class="card">Componentes de VISTA QA</h1>
+    <div class="card">
+      <h2 data-translate="sections.community.title">Enfoque en la Comunidad</h2>
+      <p data-translate="sections.community.description">Diseñado para equipos de QA, se integra con Agile/DevOps, utiliza herramientas prácticas y enfatiza resultados medibles. Proporciona un marco claro pero adaptable.</p>
+    </div>
 
-  <div class="card">
-    <h2>¿Por qué VISTA QA es atractivo y efectivo?</h2>
-    <p><strong>"VISTA"</strong> evoca claridad, visión e inclusividad. El acrónimo comunica perfectamente el propósito de la metodología.</p>
-    <p>Optimiza las tareas de accesibilidad con pasos claros y accionables, desde los requisitos hasta las pruebas y la creación de cultura. Se integra perfectamente con metodologías existentes.</p>
-  </div>
-
-  <div class="card">
-    <h2>Impacto Significativo</h2>
-    <p>Prioriza la accesibilidad como una métrica de calidad central, asegurando software inclusivo y cumplimiento con los estándares. Crea un impacto real en la experiencia del usuario.</p>
-  </div>
-
-  <div class="card">
-    <h2>Enfoque en la Comunidad</h2>
-    <p>Diseñado para equipos de QA, se integra con Agile/DevOps, utiliza herramientas prácticas y enfatiza resultados medibles. Proporciona un marco claro pero adaptable.</p>
-  </div>
-
-    <h1 class="card">Componentes de VISTA QA</h1>
-
-    <!-- SLIDER DE COMPONENTES CON BOTONES .cta -->
-    <!-- CONTENEDOR PARA CENTRAR -->
     <div class="slider-wrapper">
       <div class="slider-container">
-        <button class="cta" onclick="location.href='#vision'">V: Visión</button>
-        <button class="cta" onclick="location.href='#inclusion'">I: Inclusión</button>
-        <button class="cta" onclick="location.href='#sistematizacion'">S: Sistematización</button>
-        <button class="cta" onclick="location.href='#testing'">T: Testing</button>
-        <button class="cta" onclick="location.href='#adopcion'">A: Adopción</button>
+        <button class="cta" onclick="scrollToSection('vision')" data-translate="components.v">V: Visión</button>
+        <button class="cta" onclick="scrollToSection('inclusion')" data-translate="components.i">I: Inclusión</button>
+        <button class="cta" onclick="scrollToSection('sistematizacion')" data-translate="components.s">S: Sistematización</button>
+        <button class="cta" onclick="scrollToSection('testing')" data-translate="components.t">T: Testing</button>
+        <button class="cta" onclick="scrollToSection('adopcion')" data-translate="components.a">A: Adopción</button>
       </div>
     </div>
 
-    <section id="vision" style="scroll-margin-top: 100px; padding: 2rem 1rem;" class="card">
-      <h2>V – Requisitos Visionarios</h2>
+    <section id="vision" class="card">
+      <h2 data-translate="vision.title">V – Requisitos Visionarios</h2>
+      
+      <h3 data-translate="vision.purpose.title">Propósito</h3>
+      <p data-translate="vision.purpose.description">Incorporar la accesibilidad en los requisitos del proyecto para crear una visión clara e inclusiva desde el principio.</p>
 
-      <h3>Propósito</h3>
-      <p>Incorporar la accesibilidad en los requisitos del proyecto para crear una visión clara e inclusiva desde el principio.</p>
-
-      <h3>Proceso</h3>
+      <h3 data-translate="vision.process.title">Proceso</h3>
       <ul>
-        <li>Colaborar con las partes interesadas para crear historias de usuario que prioricen la accesibilidad.</li>
-        <li>Definir criterios de aceptación alineados con WCAG 2.1/2.2.</li>
-        <li>Utilizar una matriz de trazabilidad para garantizar que todos los requisitos de accesibilidad sean comprobables.</li>
+        <li data-translate="vision.process.item1">Colaborar con las partes interesadas para crear historias de usuario que prioricen la accesibilidad.</li>
+        <li data-translate="vision.process.item2">Definir criterios de aceptación alineados con WCAG 2.1/2.2.</li>
+        <li data-translate="vision.process.item3">Utilizar una matriz de trazabilidad para garantizar que todos los requisitos de accesibilidad sean comprobables.</li>
       </ul>
 
-      <h3>Métricas</h3>
+      <h3 data-translate="vision.metrics.title">Métricas</h3>
       <ul>
-        <li><strong>Cobertura de requisitos de accesibilidad:</strong> 100%</li>
-        <li><strong>Tasa de aprobación de partes interesadas:</strong> &gt;95%</li>
+        <li data-translate="vision.metrics.coverage"><strong>Cobertura de requisitos de accesibilidad:</strong> 100%</li>
+        <li data-translate="vision.metrics.approval"><strong>Tasa de aprobación de partes interesadas:</strong> >95%</li>
       </ul>
 
-      <h3>Herramientas</h3>
+      <h3 data-translate="vision.tools.title">Herramientas</h3>
       <ul>
         <li>Jira / Azure DevOps</li>
-        <li>Lista de verificación WCAG 2.1/2.2</li>
-        <li>Personas de accesibilidad</li>
+        <li data-translate="vision.tools.wcag">Lista de verificación WCAG 2.1/2.2</li>
+        <li data-translate="vision.tools.personas">Personas de accesibilidad</li>
       </ul>
 
-      <h3>¿Por qué es efectivo?</h3>
-      <p>Establece una base proactiva e inclusiva que minimiza el retrabajo, promueve el cumplimiento normativo y alinea a todo el equipo con una visión de producto accesible desde el inicio.</p>
+      <h3 data-translate="vision.effectiveness.title">¿Por qué es efectivo?</h3>
+      <p data-translate="vision.effectiveness.description">Establece una base proactiva e inclusiva que minimiza el retrabajo, promueve el cumplimiento normativo y alinea a todo el equipo con una visión de producto accesible desde el inicio.</p>
     </section>
 
-    <section id="testing" style="scroll-margin-top: 100px; padding: 2rem 1rem;" class="card">
-      <h2>T – Testing: Evaluación de Accesibilidad</h2>
+    <section id="testing" class="card">
+      <h2 data-translate="testing.title">T – Testing: Evaluación de Accesibilidad</h2>
 
-      <h3>Revisión de Diseño</h3>
-      <p>Validar que los diseños de UI/UX cumplan con las Pautas de Accesibilidad para el Contenido Web (WCAG), específicamente:</p>
+      <h3 data-translate="testing.designReview.title">Revisión de Diseño</h3>
+      <p data-translate="testing.designReview.description">Validar que los diseños de UI/UX cumplan con las Pautas de Accesibilidad para el Contenido Web (WCAG), específicamente:</p>
       <ul>
-        <li>Contraste de color mínimo de 4.5:1.</li>
-        <li>Gestión correcta del enfoque (focus states visibles y lógicos).</li>
-        <li>Uso adecuado de HTML semántico y roles ARIA (Application Roles & Attributes).</li>
+        <li data-translate="testing.designReview.contrast">Contraste de color mínimo de 4.5:1.</li>
+        <li data-translate="testing.designReview.focus">Gestión correcta del enfoque (focus states visibles y lógicos).</li>
+        <li data-translate="testing.designReview.semantic">Uso adecuado de HTML semántico y roles ARIA (Application Roles & Attributes).</li>
       </ul>
 
-      <h3>Pruebas Asistivas</h3>
-      <p>Se realizan pruebas con tecnologías asistivas para simular la experiencia de usuarios con diferentes tipos de discapacidad:</p>
+      <h3 data-translate="testing.assistive.title">Pruebas Asistivas</h3>
+      <p data-translate="testing.assistive.description">Se realizan pruebas con tecnologías asistivas para simular la experiencia de usuarios con diferentes tipos de discapacidad:</p>
       <ul>
-        <li>Lectores de pantalla (NVDA, JAWS, VoiceOver, TalkBack).</li>
-        <li>Navegación por teclado y comandos de voz.</li>
-        <li>Validación del flujo completo sin dependencias visuales.</li>
+        <li data-translate="testing.assistive.readers">Lectores de pantalla (NVDA, JAWS, VoiceOver, TalkBack).</li>
+        <li data-translate="testing.assistive.navigation">Navegación por teclado y comandos de voz.</li>
+        <li data-translate="testing.assistive.validation">Validación del flujo completo sin dependencias visuales.</li>
       </ul>
 
-      <h3>Herramientas Recomendadas</h3>
+      <h3 data-translate="testing.tools.title">Herramientas Recomendadas</h3>
       <ul>
         <li>Axe DevTools</li>
         <li>WAVE Evaluation Tool</li>
@@ -111,152 +107,108 @@
         <li>VoiceOver (macOS), TalkBack (Android), NVDA / JAWS (Windows)</li>
       </ul>
 
-      <h3>Métricas Clave</h3>
+      <h3 data-translate="testing.metrics.title">Métricas Clave</h3>
       <ul>
-        <li><strong>Violaciones de accesibilidad por página:</strong> &lt;3</li>
-        <li><strong>Cumplimiento de ARIA:</strong> 100%</li>
-        <li><strong>Tasa de aprobación de tecnología asistiva:</strong> &gt;90%</li>
+        <li data-translate="testing.metrics.violations"><strong>Violaciones de accesibilidad por página:</strong> <3</li>
+        <li data-translate="testing.metrics.aria"><strong>Cumplimiento de ARIA:</strong> 100%</li>
+        <li data-translate="testing.metrics.assistiveRate"><strong>Tasa de aprobación de tecnología asistiva:</strong> >90%</li>
       </ul>
 
-      <h3>Justificación</h3>
-      <p>
-        La fase de "Testing" en VISTA QA garantiza que la accesibilidad sea validada desde múltiples ángulos: técnico, funcional y experiencial. 
-        Las pruebas de diseño aseguran que los principios fundamentales de accesibilidad se respeten desde la capa visual y estructural del producto.
-      </p>
-      <p>
-        Al integrar pruebas asistivas reales, se garantiza que la solución sea usable por personas con discapacidades permanentes, temporales o situacionales, 
-        reforzando el compromiso con el diseño universal. Este enfoque reduce los errores post-lanzamiento, mejora la experiencia de usuario y asegura el cumplimiento normativo, 
-        tanto técnico (WCAG/ARIA) como legal (ADA, EAA).
-      </p>
+      <h3 data-translate="testing.justification.title">Justificación</h3>
+      <p data-translate="testing.justification.p1">La fase de "Testing" en VISTA QA garantiza que la accesibilidad sea validada desde múltiples ángulos: técnico, funcional y experiencial. Las pruebas de diseño aseguran que los principios fundamentales de accesibilidad se respeten desde la capa visual y estructural del producto.</p>
+      <p data-translate="testing.justification.p2">Al integrar pruebas asistivas reales, se garantiza que la solución sea usable por personas con discapacidades permanentes, temporales o situacionales, reforzando el compromiso con el diseño universal. Este enfoque reduce los errores post-lanzamiento, mejora la experiencia de usuario y asegura el cumplimiento normativo, tanto técnico (WCAG/ARIA) como legal (ADA, EAA).</p>
     </section>
 
-    <section id="sistematizacion" style="scroll-margin-top: 100px; padding: 2rem 1rem;" class="card">
-      <h2>S – Pruebas de Accesibilidad Optimizadas</h2>
+    <section id="sistematizacion" class="card">
+      <h2 data-translate="systematization.title">S – Pruebas de Accesibilidad Optimizadas</h2>
 
-      <h3>Propósito</h3>
-      <p>
-        Integrar pruebas de accesibilidad automatizadas y manuales directamente en los pipelines de integración y entrega continua (CI/CD), 
-        permitiendo una validación constante y sistematizada de la accesibilidad a lo largo del ciclo de desarrollo.
-      </p>
+      <h3 data-translate="systematization.purpose.title">Propósito</h3>
+      <p data-translate="systematization.purpose.description">Integrar pruebas de accesibilidad automatizadas y manuales directamente en los pipelines de integración y entrega continua (CI/CD), permitiendo una validación constante y sistematizada de la accesibilidad a lo largo del ciclo de desarrollo.</p>
 
-      <h3>Proceso</h3>
+      <h3 data-translate="systematization.process.title">Proceso</h3>
       <ul>
-        <li>Ejecutar escaneos automáticos de accesibilidad durante las fases de desarrollo y revisión de código.</li>
-        <li>Realizar pruebas manuales específicas para escenarios complejos como modales, navegación por teclado y componentes dinámicos.</li>
-        <li>Priorizar, registrar y dar seguimiento inmediato a defectos de accesibilidad, asegurando su resolución antes del lanzamiento.</li>
+        <li data-translate="systematization.process.item1">Ejecutar escaneos automáticos de accesibilidad durante las fases de desarrollo y revisión de código.</li>
+        <li data-translate="systematization.process.item2">Realizar pruebas manuales específicas para escenarios complejos como modales, navegación por teclado y componentes dinámicos.</li>
+        <li data-translate="systematization.process.item3">Priorizar, registrar y dar seguimiento inmediato a defectos de accesibilidad, asegurando su resolución antes del lanzamiento.</li>
       </ul>
 
-      <h3>Métricas Clave</h3>
+      <h3 data-translate="systematization.metrics.title">Métricas Clave</h3>
       <ul>
-        <li><strong>Cobertura de pruebas automatizadas de accesibilidad:</strong> &gt;85%</li>
-        <li><strong>Resolución de problemas críticos antes del lanzamiento:</strong> 100%</li>
+        <li data-translate="systematization.metrics.coverage"><strong>Cobertura de pruebas automatizadas de accesibilidad:</strong> >85%</li>
+        <li data-translate="systematization.metrics.resolution"><strong>Resolución de problemas críticos antes del lanzamiento:</strong> 100%</li>
       </ul>
 
-      <h3>Herramientas Recomendadas</h3>
+      <h3 data-translate="systematization.tools.title">Herramientas Recomendadas</h3>
       <ul>
-        <li><strong>Pa11y:</strong> Para escaneos automáticos en entornos CI.</li>
-        <li><strong>Playwright + axe-core:</strong> Para pruebas end-to-end con validaciones de accesibilidad integradas.</li>
-        <li><strong>Selenium con plugins de accesibilidad:</strong> Para automatización avanzada de pruebas en la UI.</li>
-        <li><strong>GitLab CI:</strong> Para ejecutar pipelines con validaciones automatizadas en cada commit/merge.</li>
+        <li><strong>Pa11y:</strong> <span data-translate="systematization.tools.pa11y">Para escaneos automáticos en entornos CI.</span></li>
+        <li><strong>Playwright + axe-core:</strong> <span data-translate="systematization.tools.playwright">Para pruebas end-to-end con validaciones de accesibilidad integradas.</span></li>
+        <li><strong>Selenium:</strong> <span data-translate="systematization.tools.selenium">Para automatización avanzada de pruebas en la UI.</span></li>
+        <li><strong>GitLab CI:</strong> <span data-translate="systematization.tools.gitlab">Para ejecutar pipelines con validaciones automatizadas en cada commit/merge.</span></li>
       </ul>
 
-      <h3>Justificación</h3>
-      <p>
-        La sistematización de pruebas accesibles dentro del flujo CI/CD representa una madurez técnica en la cultura de calidad. 
-        Al detectar errores en etapas tempranas, se reduce significativamente el costo de corrección y se acelera el tiempo de entrega. 
-        Además, esta integración convierte la accesibilidad en una responsabilidad compartida del equipo, y no en una tarea aislada al final del proceso.
-      </p>
-      <p>
-        Las pruebas automatizadas garantizan cobertura constante, mientras que las manuales aseguran precisión en contextos complejos que requieren juicio humano. 
-        Esta combinación optimizada de técnicas y herramientas fortalece la calidad inclusiva del software, mejora la experiencia del usuario final y refuerza la conformidad con estándares internacionales.
-      </p>
+      <h3 data-translate="systematization.justification.title">Justificación</h3>
+      <p data-translate="systematization.justification.p1">La sistematización de pruebas accesibles dentro del flujo CI/CD representa una madurez técnica en la cultura de calidad. Al detectar errores en etapas tempranas, se reduce significativamente el costo de corrección y se acelera el tiempo de entrega. Además, esta integración convierte la accesibilidad en una responsabilidad compartida del equipo, y no en una tarea aislada al final del proceso.</p>
+      <p data-translate="systematization.justification.p2">Las pruebas automatizadas garantizan cobertura constante, mientras que las manuales aseguran precisión en contextos complejos que requieren juicio humano. Esta combinación optimizada de técnicas y herramientas fortalece la calidad inclusiva del software, mejora la experiencia del usuario final y refuerza la conformidad con estándares internacionales.</p>
     </section>
 
-    <section id="transformacion" style="scroll-margin-top: 100px; padding: 2rem 1rem;" class="card">
-      <h2>T – Perspectivas Transformadoras de Usuarios</h2>
+    <section id="inclusion" class="card">
+      <h2 data-translate="inclusion.title">I – Perspectivas Transformadoras de Usuarios</h2>
 
-      <h3>Pruebas de Usabilidad</h3>
-      <p>
-        Realizar pruebas con usuarios que representen la diversidad de capacidades humanas —personas ciegas, con baja visión, discapacidades motoras o cognitivas— permite validar la experiencia real de uso. 
-        Estas pruebas ofrecen datos empíricos sobre accesibilidad percibida, flujo de navegación y barreras ocultas que las herramientas automáticas no detectan.
-      </p>
+      <h3 data-translate="inclusion.usability.title">Pruebas de Usabilidad</h3>
+      <p data-translate="inclusion.usability.description">Realizar pruebas con usuarios que representen la diversidad de capacidades humanas —personas ciegas, con baja visión, discapacidades motoras o cognitivas— permite validar la experiencia real de uso. Estas pruebas ofrecen datos empíricos sobre accesibilidad percibida, flujo de navegación y barreras ocultas que las herramientas automáticas no detectan.</p>
 
-      <h4>Herramientas Recomendadas</h4>
+      <h4 data-translate="inclusion.usability.tools.title">Herramientas Recomendadas</h4>
       <ul>
-        <li><strong>Zoom:</strong> Para sesiones de prueba remotas y observación directa.</li>
-        <li><strong>Google Forms:</strong> Para encuestas estructuradas post-sesión.</li>
-        <li><strong>Zephyr:</strong> Para rastrear hallazgos, documentar feedback y priorizar acciones.</li>
+        <li><strong>Zoom:</strong> <span data-translate="inclusion.usability.tools.zoom">Para sesiones de prueba remotas y observación directa.</span></li>
+        <li><strong>Google Forms:</strong> <span data-translate="inclusion.usability.tools.forms">Para encuestas estructuradas post-sesión.</span></li>
+        <li><strong>Zephyr:</strong> <span data-translate="inclusion.usability.tools.zephyr">Para rastrear hallazgos, documentar feedback y priorizar acciones.</span></li>
       </ul>
 
-      <h4>Métricas Clave</h4>
+      <h4 data-translate="inclusion.usability.metrics.title">Métricas Clave</h4>
       <ul>
-        <li><strong>Puntuación de satisfacción del usuario (CSAT):</strong> &gt; 8.5/10</li>
-        <li><strong>Tasa de incorporación de retroalimentación:</strong> &gt; 90%</li>
+        <li data-translate="inclusion.usability.metrics.satisfaction"><strong>Puntuación de satisfacción del usuario (CSAT):</strong> > 8.5/10</li>
+        <li data-translate="inclusion.usability.metrics.incorporation"><strong>Tasa de incorporación de retroalimentación:</strong> > 90%</li>
       </ul>
 
-      <h3>Demostraciones y Retroalimentación</h3>
-      <p>
-        Las demostraciones periódicas de funcionalidades accesibles permiten recopilar impresiones tanto de usuarios finales como de stakeholders clave (clientes, líderes de producto, QA).
-        Facilitar estas sesiones con estructuras claras promueve la alineación con expectativas inclusivas y detecta fallas de implementación.
-      </p>
+      <h3 data-translate="inclusion.demos.title">Demostraciones y Retroalimentación</h3>
+      <p data-translate="inclusion.demos.description">Las demostraciones periódicas de funcionalidades accesibles permiten recopilar impresiones tanto de usuarios finales como de stakeholders clave (clientes, líderes de producto, QA). Facilitar estas sesiones con estructuras claras promueve la alineación con expectativas inclusivas y detecta fallas de implementación.</p>
 
-      <h3>Iteración y Mejora</h3>
-      <p>
-        data-es= "A partir de los hallazgos obtenidos en pruebas reales, se promueve la mejora continua. El equipo refina funcionalidades, corrige obstáculos y perfecciona la experiencia general. 
-        La accesibilidad deja de ser una verificación puntual y se convierte en un ciclo iterativo basado en evidencia.""
-      </p>
+      <h3 data-translate="inclusion.iteration.title">Iteración y Mejora</h3>
+      <p data-translate="inclusion.iteration.description">A partir de los hallazgos obtenidos en pruebas reales, se promueve la mejora continua. El equipo refina funcionalidades, corrige obstáculos y perfecciona la experiencia general. La accesibilidad deja de ser una verificación puntual y se convierte en un ciclo iterativo basado en evidencia.</p>
 
-      <h3>Justificación Académica</h3>
-      <p>
-        Incorporar la voz directa del usuario con discapacidad no solo enriquece el diseño inclusivo, sino que refuerza una práctica centrada en la ética digital. 
-        Esta dimensión transformadora de la accesibilidad eleva la calidad percibida y real del producto, al mismo tiempo que promueve la empatía, la innovación social y el cumplimiento de principios del diseño universal.
-      </p>
+      <h3 data-translate="inclusion.justification.title">Justificación Académica</h3>
+      <p data-translate="inclusion.justification.description">Incorporar la voz directa del usuario con discapacidad no solo enriquece el diseño inclusivo, sino que refuerza una práctica centrada en la ética digital. Esta dimensión transformadora de la accesibilidad eleva la calidad percibida y real del producto, al mismo tiempo que promueve la empatía, la innovación social y el cumplimiento de principios del diseño universal.</p>
     </section>
 
-    <section id="adopcion" style="scroll-margin-top: 100px; padding: 2rem 1rem;" class="card">
-      <h2>A – Cultura de Calidad Adaptativa</h2>
+    <section id="adopcion" class="card">
+      <h2 data-translate="adoption.title">A – Cultura de Calidad Adaptativa</h2>
 
-      <h3>Capacitación Continua</h3>
-      <p>
-        Fomentar una cultura de accesibilidad sostenible requiere capacitación continua. Educar a los equipos en los principios de las WCAG, en el uso de tecnologías asistivas (como lectores de pantalla o navegación por teclado), 
-        y en buenas prácticas de desarrollo inclusivo es esencial para mantener la calidad a largo plazo.
-      </p>
+      <h3 data-translate="adoption.training.title">Capacitación Continua</h3>
+      <p data-translate="adoption.training.description">Fomentar una cultura de accesibilidad sostenible requiere capacitación continua. Educar a los equipos en los principios de las WCAG, en el uso de tecnologías asistivas (como lectores de pantalla o navegación por teclado), y en buenas prácticas de desarrollo inclusivo es esencial para mantener la calidad a largo plazo.</p>
 
-      <h4>Herramientas Recomendadas</h4>
+      <h4 data-translate="adoption.training.tools.title">Herramientas Recomendadas</h4>
       <ul>
-        <li><strong>Confluence:</strong> Para documentación de estándares y guías prácticas.</li>
-        <li><strong>Microsoft Teams:</strong> Para sesiones sincrónicas de formación y talleres colaborativos.</li>
-        <li><strong>Plataformas especializadas:</strong> Como Deque University, edX, o Coursera para capacitación técnica.</li>
+        <li><strong>Confluence:</strong> <span data-translate="adoption.training.tools.confluence">Para documentación de estándares y guías prácticas.</span></li>
+        <li><strong>Microsoft Teams:</strong> <span data-translate="adoption.training.tools.teams">Para sesiones sincrónicas de formación y talleres colaborativos.</span></li>
+        <li><strong>Plataformas especializadas:</strong> <span data-translate="adoption.training.tools.platforms">Como Deque University, edX, o Coursera para capacitación técnica.</span></li>
       </ul>
 
-      <h3>Mejora de Procesos</h3>
-      <p>
-        Las retrospectivas periódicas permiten refinar el enfoque de accesibilidad de manera continua. Evaluar qué prácticas han sido efectivas, dónde se presentan cuellos de botella y cómo pueden mejorarse los flujos permite institucionalizar la accesibilidad en la cultura operativa.
-      </p>
+      <h3 data-translate="adoption.improvement.title">Mejora de Procesos</h3>
+      <p data-translate="adoption.improvement.description">Las retrospectivas periódicas permiten refinar el enfoque de accesibilidad de manera continua. Evaluar qué prácticas han sido efectivas, dónde se presentan cuellos de botella y cómo pueden mejorarse los flujos permite institucionalizar la accesibilidad en la cultura operativa.</p>
 
-      <h3>Celebración de Logros</h3>
-      <p>
-        Reconocer públicamente los logros del equipo en accesibilidad —como alcanzar conformidad WCAG AA o completar sprints sin defectos de accesibilidad— refuerza el compromiso colectivo.
-        Celebrar estos hitos crea motivación, visibiliza el impacto del trabajo y transforma la accesibilidad en un motivo de orgullo organizacional.
-      </p>
+      <h3 data-translate="adoption.celebration.title">Celebración de Logros</h3>
+      <p data-translate="adoption.celebration.description">Reconocer públicamente los logros del equipo en accesibilidad —como alcanzar conformidad WCAG AA o completar sprints sin defectos de accesibilidad— refuerza el compromiso colectivo. Celebrar estos hitos crea motivación, visibiliza el impacto del trabajo y transforma la accesibilidad en un motivo de orgullo organizacional.</p>
 
-      <h3>Justificación Académica</h3>
-      <p>
-        La adopción efectiva de prácticas de accesibilidad no se logra únicamente con políticas técnicas, sino con el desarrollo de una cultura organizacional que valore la inclusión digital como un pilar de calidad. 
-        Estudios de cambio organizacional demuestran que la capacitación sostenida, la mejora incremental y la celebración de logros son fundamentales para garantizar la permanencia de nuevas prácticas.
-      </p>
-      <p>
-        Esta dimensión "adaptativa" no solo responde a normas externas, sino que transforma los valores internos del equipo hacia una calidad genuinamente centrada en el ser humano.
-      </p>
+      <h3 data-translate="adoption.justification.title">Justificación Académica</h3>
+      <p data-translate="adoption.justification.p1">La adopción efectiva de prácticas de accesibilidad no se logra únicamente con políticas técnicas, sino con el desarrollo de una cultura organizacional que valore la inclusión digital como un pilar de calidad. Estudios de cambio organizacional demuestran que la capacitación sostenida, la mejora incremental y la celebración de logros son fundamentales para garantizar la permanencia de nuevas prácticas.</p>
+      <p data-translate="adoption.justification.p2">Esta dimensión "adaptativa" no solo responde a normas externas, sino que transforma los valores internos del equipo hacia una calidad genuinamente centrada en el ser humano.</p>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 VISTA QA. Todos los derechos reservados.</p>
+    <p data-translate="footer.copyright">&copy; 2025 VISTA QA. Todos los derechos reservados.</p>
   </footer>
-  
-  <script src="../script.js"></script>
-
+<script src="../src/script.js"></script>
 </body>
 </html>
